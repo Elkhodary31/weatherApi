@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap & Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg custom-navbar py-3">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <i class="fa-solid fa-cloud fa-2x text-info me-2"></i>
+          <div>
+            <h5 class="mb-0 fw-bold text-white">Weather</h5>
+            <small class="text-info">tagline goes here</small>
+          </div>
+        </a>
+
+        <!-- Navbar Links -->
+        <ul class="navbar-nav ms-auto d-flex align-items-center gap-3">
+          <li class="nav-item">
+            <a class="nav-link active rounded-pill px-3 py-1" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container pt-5 p-0">
+      <div class="weather-input">
+        <h3>Enter a City Name</h3>
+        <input
+          class="city-input"
+          type="text"
+          placeholder="E.g., New York, London, Tokyo"
+        />
+        <button class="search-btn">Search</button>
+      </div>
+      <div class="weather-data">
+        <h2>current-weather</h2>
+        <div class="current-weather"></div>
+        <div class="days-forecast">
+          <h2>3-Day Forecast</h2>
+          <div class="rounded-4 overflow-hidden">
+            <div class="row" id="rowData"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="subscribe">
+        <input type="email" placeholder="Enter your email to subscribe..." />
+        <button>Subscribe</button>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+      </div>
+
+      <div class="copyright">
+        Copyright 2014 Company name. Designed by Themezy. All rights reserved
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
