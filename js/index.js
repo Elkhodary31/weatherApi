@@ -14,6 +14,7 @@ async function callApi(value) {
   let data = await response.json();
   display(data);
 }
+callApi("Cairo");
 
 
 function display(data) {
