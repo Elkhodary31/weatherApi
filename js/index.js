@@ -9,7 +9,7 @@ console.log(inputSearch,btnSearch,rowData);
 let array;
 
 async function callApi(value) {
-  const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${value}&days=3`)
+  const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${value}&days=3`)
   console.log(response);
   let data = await response.json();
   display(data);
